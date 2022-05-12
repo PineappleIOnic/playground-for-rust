@@ -6,6 +6,6 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-appwrite = { path = "/Users/ionicisere/Documents/github/sdk-generator/examples/rust" }
+appwrite = { git = "https://github.com/PineappleIOnic/sdk-for-rust/" }
 rand = "0.8.5"
 colored = "2.0.0"
