@@ -186,7 +186,7 @@ fn upload_file(client: &Client, bucket_id: &str) -> String {
     println!("{}", "Running Upload File API...".bright_green());
     let storage = appwrite::services::Storage::new(client);
 
-    let file = PathBuf::from("./resources/SampleJPGImage_30mbmb.jpg");
+    let file = PathBuf::from("./resources/nature.jpg");
 
     let file_upload = match storage.create_file(bucket_id, "unique()", file, Some(&["role:all"]), Some(&["role:all"])) {
         Ok(file) => file,
